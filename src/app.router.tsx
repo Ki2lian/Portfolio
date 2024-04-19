@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/home';
-import Navbar from './components/navbar';
+import Header from './components/Header';
 import { useThemeStore } from './stores/useThemeStore';
 import { useEffect } from 'react';
 
@@ -17,7 +17,7 @@ const AppRouter = () => {
 
     return (
         <>
-            <Navbar />
+            <Header />
             <div className="relative m-auto min-h-full max-w-6xl px-4 pt-20">
                 <Routes>
                     <Route path="/" element={ <HomePage /> } />
