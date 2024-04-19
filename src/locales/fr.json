@@ -1,3 +1,9 @@
 {
-    "translation": {}
+    "translation": {
+        "navbar": {
+            "skills": "Compétences",
+            "projects": "Projets",
+            "contact": "Contact"
+        }
+    }
 }
