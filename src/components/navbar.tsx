@@ -5,6 +5,7 @@ import avatarImage from '@/assets/images/avatar.svg';
 import { useState } from 'react';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
+import DarkModeButton from './DarkModeButton';
 
 const Navbar = () => {
     const { t } = useTranslation();
@@ -21,6 +22,7 @@ const Navbar = () => {
                     <img src={ avatarImage } alt="Avatar" className="size-10" />
                 </Link>
                 <div className="flex space-x-3 md:hidden">
+                    <DarkModeButton />
                     <Button onClick={ toggleMenu } size={ 'none' }>
                         <Menu size={ 32 } />
                     </Button>
@@ -56,6 +58,9 @@ const Navbar = () => {
                             </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <Link to="#contact">{ t('navbar.contact') }</Link>
+                            </NavigationMenuItem>
+                            <NavigationMenuItem>
+                                <DarkModeButton />
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
