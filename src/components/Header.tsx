@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/components/ui/navigation-menu';
-import avatarImage from '@/assets/images/avatar.svg';
 import { useState } from 'react';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
@@ -18,9 +17,9 @@ const Navbar = () => {
 
     return (
         <header className="fixed left-0 top-0 z-10 w-full bg-background p-4 shadow-lg">
-            <div className="relative m-auto flex min-h-full max-w-6xl items-center justify-between">
+            <div className="relative m-auto flex min-h-full max-w-3xl items-center justify-between">
                 <Link to="/">
-                    <img src={ avatarImage } alt="Avatar" className="size-10" />
+                    <h1 className="font-bold">Ki2lian</h1>
                 </Link>
                 <div className="flex space-x-3 md:hidden">
                     <LanguageSelector />
