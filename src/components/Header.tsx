@@ -16,7 +16,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="fixed left-0 top-0 z-10 w-full bg-background p-4 shadow-lg">
+        <header className="fixed left-0 top-0 z-10 w-full p-6 shadow-lg backdrop-blur-md">
             <div className="relative m-auto flex min-h-full max-w-3xl items-center justify-between">
                 <Link to="/">
                     <h1 className="font-bold">Ki2lian</h1>

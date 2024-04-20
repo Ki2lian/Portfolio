@@ -59,4 +59,21 @@
     body {
         @apply bg-background text-foreground;
     }
+
+    ::-moz-selection {
+        background: hsla(var(--primary) / .5);
+        color: #fff;
+    }
+    
+    ::selection {
+        background: hsla(var(--primary) / .5);
+        color: #fff;
+    }
+}
+
+.name-gradient {
+    background: -webkit-linear-gradient(-45deg, #c7c940, #94a7e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
