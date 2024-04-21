@@ -1,6 +1,6 @@
-import { useThemeStore } from '@/stores/useThemeStore';
-import { Button } from './ui/button';
 import { Moon, Sun } from 'lucide-react';
+import { useThemeStore } from '@/stores/useThemeStore';
+import { Button } from '@/components/ui/button';
 
 const DarkModeButton = () => {
     const toggleTheme = useThemeStore((state) => state.toggleTheme);
