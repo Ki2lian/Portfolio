@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/components/ui/navigation-menu';
 import { useState } from 'react';
-import { Button } from './ui/button';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import clsx from 'clsx';
+import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/components/ui/navigation-menu';
+import { Button } from '@/components/ui/button';
 import DarkModeButton from './DarkModeButton';
 import LanguageSelector from './LanguageSelector';
 
@@ -16,7 +17,10 @@ const Navbar = () => {
     };
 
     return (
-        <header className="fixed left-0 top-0 z-10 w-full p-6 shadow-lg backdrop-blur-md">
+        <header className={ clsx(
+            'fixed left-0 top-0 z-10 w-full p-6 shadow-lg',
+            { 'backdrop-blur-md': !isMenuOpen },
+        ) }>
             <div className="relative m-auto flex min-h-full max-w-3xl items-center justify-between">
                 <Link to="/">
                     <h1 className="font-bold">Ki2lian</h1>
