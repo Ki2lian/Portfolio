@@ -9,6 +9,10 @@
             "srOnly": "Salut, moi c'est Killian, je transforme des idées en réalité numérique en tant que développeur Web.",
             "job": "Développeur Web Full-Stack",
             "description": "Salut, je suis un développeur Web Full-Stack passionné par la concrétisation d'idées. Je suis prompt à apprendre et méticuleux dans l'attention aux détails et à la qualité, toujours en quête d'amélioration."
+        },
+        "projects": {
+            "title": "Projets personnels",
+            "project": {}
         }
     }
 }

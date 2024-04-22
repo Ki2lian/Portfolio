@@ -9,6 +9,10 @@
             "srOnly": "Hi, I'm Killian, I turn ideas into digital reality as a web developer.",
             "job": "Full-Stack Web Developer",
             "description": "Hi, I'm a passionate Full-Stack Web Developer dedicated to bringing ideas to life. I'm fast learner and meticulous in attention to details and quality, always striving for improvement."
+        },
+        "projects": {
+            "title": "Personal projects",
+            "project": {}
         }
     }
 }
