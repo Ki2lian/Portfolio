@@ -1,12 +1,11 @@
 import avatarImage from '@/assets/images/avatar.svg';
 import { useTranslation } from 'react-i18next';
 
-
-export const HeroSection = () => {
+export const HeroSection: React.FC<React.HTMLProps<HTMLDivElement>> = ({ className, ...props }) => {
     const { t } = useTranslation();
 
     return (
-        <section className="py-10 lg:py-14">
+        <section className={ className } { ...props }>
             <h1 className="sr-only">{ t('hero.srOnly') }</h1>
             <div className="flex flex-col justify-center">
                 <div className="flex w-fit gap-8">
@@ -17,7 +16,7 @@ export const HeroSection = () => {
                     </div>
                 </div>
                 <div className="flex flex-col pt-8">
-                    <p className="text-muted md:text-lg">{ t('hero.description') }</p>
+                    <p className="text-justify text-muted md:text-lg">{ t('hero.description') }</p>
                 </div>
             </div>
         </section>
