@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { Menu, X } from 'lucide-react';
 import clsx from 'clsx';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/components/ui/navigation-menu';
@@ -39,13 +40,13 @@ const Navbar = () => {
                                 </Button>
                                 <NavigationMenuList className="flex-col items-baseline gap-6">
                                     <NavigationMenuItem>
-                                        <Link to="#skills" className="text-2xl">{ t('navbar.skills') }</Link>
+                                        <HashLink className="text-2xl" smooth to="#projects">{ t('navbar.projects') }</HashLink>
                                     </NavigationMenuItem>
                                     <NavigationMenuItem>
-                                        <Link to="#projects" className="text-2xl">{ t('navbar.projects') }</Link>
+                                        <HashLink className="text-2xl" smooth to="#skills">{ t('navbar.skills') }</HashLink>
                                     </NavigationMenuItem>
                                     <NavigationMenuItem>
-                                        <Link to="#contact" className="text-2xl">{ t('navbar.contact') }</Link>
+                                        <HashLink className="text-2xl" smooth to="#contact">{ t('navbar.contact') }</HashLink>
                                     </NavigationMenuItem>
                                 </NavigationMenuList>
                             </NavigationMenu>
@@ -56,13 +57,13 @@ const Navbar = () => {
                     <NavigationMenu aria-label="Navigation">
                         <NavigationMenuList className="flex space-x-6">
                             <NavigationMenuItem>
-                                <Link to="#skills">{ t('navbar.skills') }</Link>
+                                <HashLink smooth to="#projects">{ t('navbar.projects') }</HashLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <Link to="#projects">{ t('navbar.projects') }</Link>
+                                <HashLink smooth to="#skills">{ t('navbar.skills') }</HashLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <Link to="#contact">{ t('navbar.contact') }</Link>
+                                <HashLink smooth to="#contact">{ t('navbar.contact') }</HashLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <LanguageSelector />
