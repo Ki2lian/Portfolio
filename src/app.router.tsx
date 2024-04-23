@@ -18,7 +18,7 @@ const AppRouter = () => {
     return (
         <>
             <Header />
-            <div className="relative m-auto min-h-full max-w-3xl px-4 pt-20">
+            <div className="relative m-auto min-h-full max-w-4xl px-4 pt-20">
                 <Routes>
                     <Route path="/" element={ <HomePage /> } />
                 </Routes>
