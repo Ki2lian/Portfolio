@@ -2,39 +2,32 @@ import { useEffect } from 'react';
 import { useThemeStore } from '@/stores/useThemeStore';
 
 export const ThemeManager: React.FC = () => {
-    const theme = useThemeStore((state) => state.theme);
+    const { theme, setAutoThemeValue, isDark } = useThemeStore();
 
     useEffect(() => {
         const mediaQueryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
         const applyTheme = (newTheme: string) => {
-            if (newTheme === 'dark') {
+            if (newTheme === 'dark' || (newTheme === 'auto' && isDark())) {
                 document.documentElement.classList.add('dark');
             } else {
                 document.documentElement.classList.remove('dark');
             }
         };
 
-        const updateTheme = () => {
-            const currentTheme = useThemeStore.getState().theme;
-
-            if (currentTheme === 'auto') {
-                applyTheme(mediaQueryPrefersDark.matches ? 'dark' : 'light');
-            }
+        const updateAutoThemeValue = () => {
+            setAutoThemeValue(mediaQueryPrefersDark.matches ? 'dark' : 'light');
+            applyTheme(theme);
         };
 
-        if (theme != 'auto') {
-            applyTheme(theme);
-        } else {
-            updateTheme();
-        }
+        updateAutoThemeValue();
 
-        mediaQueryPrefersDark.addEventListener('change', updateTheme);
+        mediaQueryPrefersDark.addEventListener('change', updateAutoThemeValue);
 
         return () => {
-            mediaQueryPrefersDark.removeEventListener('change', updateTheme);
+            mediaQueryPrefersDark.removeEventListener('change', updateAutoThemeValue);
         };
-    }, [ theme ]);
+    }, [ theme, setAutoThemeValue, isDark ]);
 
     return null;
 };
