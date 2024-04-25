@@ -82,12 +82,18 @@ module.exports = {
                 'swipe-from-left': {
                     '0%': { transform: 'translateX(100%)' },
                     '100%': { transform: 'translateX(0)' },
-                }
+                },
+                'spin-reverse': {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '50%': { transform: 'rotate(360deg)' },
+                    '100%': { transform: 'rotate(0deg)' },
+                },
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
                 'swipe-from-left': 'swipe-from-left 0.2s ease-out',
+                'spin-slow': 'spin-reverse 20s ease-in-out infinite',
             },
         },
     },

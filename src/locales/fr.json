@@ -13,6 +13,15 @@
         "projects": {
             "title": "Projets personnels",
             "project": {}
+        },
+        "skills": {
+            "title": "Comment je peux vous aider ?",
+            "react": "Je peux concevoir ce que vous voulez avec React.",
+            "tailwind": "Le meilleur framework CSS pour mes nouveaux projets.",
+            "typescript": "L'indispensable pour la maintenabilité de mes projets.",
+            "backendTitle": "Backend avec Symfony, Fastify et Next.js",
+            "backend": "Ma boîte à outils pour donner vie à mes projets côté serveurs.",
+            "orm": "Mes alliés pour la gestion de données."
         }
     }
 }
