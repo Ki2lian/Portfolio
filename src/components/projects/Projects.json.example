@@ -1,0 +1,15 @@
+[
+    {
+        "id": "0",
+        "image": "https://placehold.co/360x160/FFF/31343C",
+        "title": "First project",
+        "description": "This is my first project",
+        "livePreviewLink": "https://www.google.com"
+    },
+    {
+        "id": "1",
+        "title": "Second project",
+        "description": "This is my second project and it is really long description that should be simplified",
+        "sourceCodeLink": "https://www.google.com"
+    }
+]
