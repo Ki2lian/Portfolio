@@ -7,23 +7,29 @@ import { GithubIcon } from '@/components/icons/GithubIcon';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const LivePreviewContent = () => (
-    <>
-        <span>
-            <SquareArrowOutUpRight size={ 24 } />
-        </span>
-        <span>Live Preview</span>
-    </>
-);
+const LivePreviewContent = () => {
+    const { t } = useTranslation();
+    return (
+        <>
+            <span>
+                <SquareArrowOutUpRight size={ 24 } />
+            </span>
+            <span>{ t('projects.button.livePreview') }</span>
+        </>
+    );
+};
 
-const ViewCodeContent = () => (
-    <>
-        <span>
-            <GithubIcon size={ 24 } />
-        </span>
-        <span>View Code</span>
-    </>
-);
+const ViewCodeContent = () => {
+    const { t } = useTranslation();
+    return (
+        <>
+            <span>
+                <GithubIcon size={ 24 } />
+            </span>
+            <span>{ t('projects.button.viewCode') }</span>
+        </>
+    );
+};
 
 export const ProjectItem: React.FC<IProjectItemProps> = ({ project, className, ...props }) => {
     const { t } = useTranslation();

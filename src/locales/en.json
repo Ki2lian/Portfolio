@@ -12,6 +12,10 @@
         },
         "projects": {
             "title": "Personal projects",
+            "button": {
+                "livePreview": "Live preview",
+                "viewCode": "View code"
+            },
             "project": {}
         },
         "skills": {

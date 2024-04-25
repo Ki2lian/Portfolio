@@ -12,6 +12,10 @@
         },
         "projects": {
             "title": "Projets personnels",
+            "button": {
+                "livePreview": "Voir le site",
+                "viewCode": "Voir le code"
+            },
             "project": {}
         },
         "skills": {
