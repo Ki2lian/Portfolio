@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import { SymfonyIcon } from '../icons/SymfonyIcon';
-import { FastifyIcon } from '../icons/FastifyIcon';
-import { NextjsIcon } from '../icons/NextjsIcon';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { SymfonyIcon } from '@/components/icons/SymfonyIcon';
+import { FastifyIcon } from '@/components/icons/FastifyIcon';
+import { NextjsIcon } from '@/components/icons/NextjsIcon';
 
 export const BackendSkill: React.FC<React.HTMLProps<HTMLDivElement>> = ({ className, ...props }) => {
     const { t } = useTranslation();

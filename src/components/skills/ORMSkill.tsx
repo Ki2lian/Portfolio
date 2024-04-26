@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import { DoctrineIcon } from '../icons/DoctrineIcon';
-import { PrismaIcon } from '../icons/PrismaIcon';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { DoctrineIcon } from '@/components/icons/DoctrineIcon';
+import { PrismaIcon } from '@/components/icons/PrismaIcon';
 
 export const ORMSkill: React.FC<React.HTMLProps<HTMLDivElement>> = ({ className, ...props }) => {
     const { t } = useTranslation();

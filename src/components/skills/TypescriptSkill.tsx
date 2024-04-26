@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import { TypescriptIcon } from '../icons/TypescriptIcon';
 import { useThemeStore } from '@/stores/useThemeStore';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { TypescriptIcon } from '@/components/icons/TypescriptIcon';
 
 export const TypescriptSkill: React.FC<React.HTMLProps<HTMLDivElement>> = ({ className, ...props }) => {
     const { t } = useTranslation();

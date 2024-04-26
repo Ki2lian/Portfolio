@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
+import { cn } from '@/lib/utils';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { TailwindIcon } from '@/components/icons/TailwindIcon';
-import { cn } from '@/lib/utils';
 
 export const TailwindSkill: React.FC<React.HTMLProps<HTMLDivElement>> = ({ className, ...props }) => {
     const { t } = useTranslation();
