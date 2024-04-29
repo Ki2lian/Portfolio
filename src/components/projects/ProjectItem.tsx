@@ -62,7 +62,7 @@ export const ProjectItem: React.FC<IProjectItemProps> = ({ project, className, .
                 </div>
                 <div className="flex items-center justify-center">
                     { project.livePreviewLink ? (
-                        <Link to={ project.livePreviewLink } className={ cn(buttonVariants({ variant: 'link' }), 'gap-2 text-lg') }>
+                        <Link to={ project.livePreviewLink } target="_blank" rel="noopener noreferrer" className={ cn(buttonVariants({ variant: 'link' }), 'gap-2 text-lg') }>
                             <LivePreviewContent />
                         </Link>
                     ) : (
@@ -71,7 +71,7 @@ export const ProjectItem: React.FC<IProjectItemProps> = ({ project, className, .
                         </Button>
                     ) }
                     { project.sourceCodeLink ? (
-                        <Link to={ project.sourceCodeLink } className={ cn(buttonVariants({ variant: 'link' }), 'gap-2 text-lg') }>
+                        <Link to={ project.sourceCodeLink } target="_blank" rel="noopener noreferrer" className={ cn(buttonVariants({ variant: 'link' }), 'gap-2 text-lg') }>
                             <ViewCodeContent />
                         </Link>
                     ) : (
