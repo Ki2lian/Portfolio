@@ -26,6 +26,9 @@
             "backendTitle": "Backend with Symfony, Fastify and Next.js",
             "backend": "My toolbox to give life to my projects on the server.",
             "orm": "My allies for data management."
+        },
+        "contact": {
+            "title": "Contact me"
         }
     }
 }
