@@ -45,7 +45,7 @@ export const ProjectItem: React.FC<IProjectItemProps> = ({ project, className, .
 
     return (
         <Card className={ cn('border-0 shadow-md flex flex-col', className) } { ...props } ref={ props.ref as React.RefObject<HTMLDivElement> }>
-            <CardImage src={ image } alt={ project.title } />
+            <CardImage className="aspect-[2.2/1] object-cover" src={ image } alt={ project.title } />
             <div className="flex grow flex-col">
                 <CardHeader>
                     <CardTitle>{ title }</CardTitle>
