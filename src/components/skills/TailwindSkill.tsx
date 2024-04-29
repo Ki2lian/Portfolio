@@ -11,7 +11,7 @@ export const TailwindSkill: React.FC<React.HTMLProps<HTMLDivElement>> = ({ class
             <CardHeader>
                 <div className="mb-2 h-[96px] w-full rounded-md bg-gradient-to-br from-accent to-blue-500"></div>
                 <CardTitle className="flex items-center gap-2">
-                    <TailwindIcon />
+                    <TailwindIcon bgColor="currentColor" />
                     <span>TailwindCSS</span>
                 </CardTitle>
             </CardHeader>
