@@ -6,6 +6,7 @@ import { Button, buttonVariants } from '@/components/ui/button';
 import { GithubIcon } from '@/components/icons/GithubIcon';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { TechnologyIcon } from '../TechnologyIcon';
 
 const LivePreviewContent = () => {
     const { t } = useTranslation();
@@ -53,25 +54,32 @@ export const ProjectItem: React.FC<IProjectItemProps> = ({ project, className, .
                     <CardDescription className="text-base text-foreground">{ description }</CardDescription>
                 </CardContent>
             </div>
-            <CardFooter className="flex justify-center">
-                { project.livePreviewLink ? (
-                    <Link to={ project.livePreviewLink } className={ cn(buttonVariants({ variant: 'link' }), 'gap-2 text-lg') }>
-                        <LivePreviewContent />
-                    </Link>
-                ) : (
-                    <Button variant="disabled" className="gap-2 text-lg">
-                        <LivePreviewContent />
-                    </Button>
-                ) }
-                { project.sourceCodeLink ? (
-                    <Link to={ project.sourceCodeLink } className={ cn(buttonVariants({ variant: 'link' }), 'gap-2 text-lg') }>
-                        <ViewCodeContent />
-                    </Link>
-                ) : (
-                    <Button variant="disabled" className="gap-2 text-lg">
-                        <ViewCodeContent />
-                    </Button>
-                ) }
+            <CardFooter className="flex-col gap-y-2">
+                <div className="flex w-full justify-start gap-x-2">
+                    { project.technologies && project.technologies.map((technology, idx) => (
+                        <TechnologyIcon key={ idx } technology={ technology } />
+                    )) }
+                </div>
+                <div className="flex items-center justify-center">
+                    { project.livePreviewLink ? (
+                        <Link to={ project.livePreviewLink } className={ cn(buttonVariants({ variant: 'link' }), 'gap-2 text-lg') }>
+                            <LivePreviewContent />
+                        </Link>
+                    ) : (
+                        <Button variant="disabled" className="gap-2 text-lg">
+                            <LivePreviewContent />
+                        </Button>
+                    ) }
+                    { project.sourceCodeLink ? (
+                        <Link to={ project.sourceCodeLink } className={ cn(buttonVariants({ variant: 'link' }), 'gap-2 text-lg') }>
+                            <ViewCodeContent />
+                        </Link>
+                    ) : (
+                        <Button variant="disabled" className="gap-2 text-lg">
+                            <ViewCodeContent />
+                        </Button>
+                    ) }
+                </div>
             </CardFooter>
         </Card>
     );

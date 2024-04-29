@@ -4,7 +4,8 @@
         "image": "https://placehold.co/360x160/FFF/31343C",
         "title": "First project",
         "description": "This is my first project",
-        "livePreviewLink": "https://www.google.com"
+        "livePreviewLink": "https://www.google.com",
+        "technologies": ["React", "TypeScript", "Tailwind"]
     },
     {
         "id": "1",

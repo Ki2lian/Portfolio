@@ -7,6 +7,7 @@ export const ProjectSchema = z.object({
     livePreviewLink: z.string().optional(),
     sourceCodeLink: z.string().optional(),
     image: z.string().optional(),
+    technologies: z.array(z.string()).optional(),
 });
 
 export type TProject = z.infer<typeof ProjectSchema>;
