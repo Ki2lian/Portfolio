@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Portfolio de Ki2lian
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Bienvenue sur mon portfolio ! Ce projet présente mes compétences, mes projets et mes réalisations dans le domaine du développement web. Ce portfolio est une vitrine de mon travail.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fonctionnalités
 
-## Expanding the ESLint configuration
+- **Présentation des projets** : Liste de projets avec desdescriptions détaillées et des liens vers les dépôts GitHub et les démos en direct.
+- **Les frameworks** : Liste des frameworks que j'utilise pour les réalisations full-stack.
+- **Multi-langue** : Le portfolio est accessible en anglais et en français.
+- **Thème** : Le portfolio est disponible en mode sombre et clair, avec la possibilité de changer de mode automatiquement selon le thème de l'appareil.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clonez ce dépôt sur votre machine locale.
+2. Installez les dépendances en utilisant `npm install`.
+3. Lancez le serveur en utilisant `npm run dev`.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Site crée avec
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [Shadcn UI](https://ui.shadcn.com/)
+- [I18next](https://www.i18next.com/)
+
+## Contact
+
+Pour toute question ou collaboration, n'hésitez pas à me contacter par email à [killian@ki2lian.fr](mailto:killian@ki2lian.fr).
