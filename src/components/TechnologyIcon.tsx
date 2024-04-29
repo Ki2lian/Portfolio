@@ -25,7 +25,7 @@ const iconMap: IIconMap = {
     symfony: { IconComponent: SymfonyIcon, label: 'Symfony' },
 };
 
-export const TechnologyIcon: React.FC<ITechnologyIconProps & IIconProps> = ({ technology, bgColor, textColor, size }) => {
+export const TechnologyIcon: React.FC<ITechnologyIconProps & IIconProps> = ({ technology, size }) => {
     const icon = iconMap[technology.toLowerCase() as keyof IIconMap];
     if (!icon) return null;
     const IconComponent = icon.IconComponent;
@@ -35,7 +35,7 @@ export const TechnologyIcon: React.FC<ITechnologyIconProps & IIconProps> = ({ te
         <TooltipProvider delayDuration={ 100 }>
             <Tooltip>
                 <TooltipTrigger>
-                    <IconComponent className="cursor-default transition-transform duration-300 ease-in-out hover:-translate-y-0.5" size={ size } bgColor={ bgColor } textColor={ textColor } />
+                    <IconComponent className="cursor-default transition-transform duration-300 ease-in-out hover:-translate-y-0.5" size={ size } />
                 </TooltipTrigger>
                 <TooltipContent>
                     <p>{ label }</p>
