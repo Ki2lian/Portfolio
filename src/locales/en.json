@@ -16,7 +16,12 @@
                 "livePreview": "Live preview",
                 "viewCode": "View code"
             },
-            "project": {}
+            "project": {
+                "0": {
+                    "title": "My portfolio",
+                    "description": "This is my personal portfolio, showcasing my work and skills. It's fully responsive and user-friendly, designed with support for dark, light, and auto mode. Available in both English and French, it highlights my projects."
+                }
+            }
         },
         "skills": {
             "title": "How I can help you ?",

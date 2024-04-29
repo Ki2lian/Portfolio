@@ -16,7 +16,12 @@
                 "livePreview": "Voir le site",
                 "viewCode": "Voir le code"
             },
-            "project": {}
+            "project": {
+                "0": {
+                    "title": "Mon portfolio",
+                    "description": "Voici mon portfolio personnel, présentant mes travaux et compétences. Il est entièrement responsive et user-friendly, conçu avec un support pour les modes sombre, clair et automatique. Disponible en anglais et en français, il met en valeur mes projets."
+                }
+            }
         },
         "skills": {
             "title": "Comment je peux vous aider ?",
