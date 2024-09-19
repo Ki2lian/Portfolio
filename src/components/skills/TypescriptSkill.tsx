@@ -15,7 +15,7 @@ export const TypescriptSkill: React.FC<React.HTMLProps<HTMLDivElement>> = ({ cla
                 </div>
                 <CardTitle className="flex items-center gap-2">
                     <TypescriptIcon bgColor="currentColor" textColor={ isDark() ? '#000' : '#FFF' } />
-                    <span>Typescipt</span>
+                    <span>TypeScript</span>
                 </CardTitle>
             </CardHeader>
             <CardContent>
