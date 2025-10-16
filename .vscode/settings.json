@@ -1,5 +1,4 @@
 {
-    "security.workspace.trust.untrustedFiles": "open",
     "files.eol": "\n",
     "git.autofetch": true,
     "files.autoSave": "onFocusChange",
@@ -9,10 +8,7 @@
     },
     "editor.tabSize": 4,
     "eslint.workingDirectories": ["./"],
-    "[prisma]": {
-        "editor.defaultFormatter": "Prisma.prisma"
-    },
     "files.associations": {
-        "*.scss": "tailwindcss"
+        "*.css": "tailwindcss"
     }
 }

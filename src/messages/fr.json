@@ -1,0 +1,63 @@
+{
+    "header": {
+        "skills": "Compétences",
+        "projects": "Projets",
+        "contact": "Contact"
+    },
+    "home": {
+        "metadata": {
+            "title": "Portfolio de Ki2lian",
+            "description": "Développeur web full-stack avec une passion pour la concrétisation des idées. Contribue activement à la réalisation de sites web en apportant un mélange de compétences et de connaissances. Curieux de nature, travailleur acharné et épistémophile dans le domaine du développement web."
+        },
+        "hero": {
+            "sr_only": "Salut, moi c'est Killian, je transforme des idées en réalité numérique en tant que développeur Web.",
+            "job": "Développeur Web Full-Stack",
+            "description": "Salut, je suis un développeur Web Full-Stack passionné par la concrétisation d'idées. Je suis toujours prêt à apprendre et je suis méticuleux dans l'attention aux détails et à la qualité, toujours en quête d'amélioration."
+        },
+        "projects": {
+            "title": "Projets",
+            "button": {
+                "see_all": "Voir tout",
+                "see_less": "Voir moins",
+                "livePreview": "Voir le site",
+                "viewCode": "Voir le code"
+            }
+        },
+        "skills": {
+            "title": "Comment je peux vous aider ?",
+            "react": "Je peux concevoir ce que vous voulez avec React.",
+            "tailwind": "Le meilleur framework CSS pour mes nouveaux projets.",
+            "typescript": "L'indispensable pour la maintenabilité de mes projets.",
+            "backend": {
+                "title": "Backend avec Symfony, Fastify et Next.js",
+                "description": "Ma boîte à outils pour donner vie à mes projets côté serveurs."
+            },
+            "orm": "Mes alliés pour la gestion de données."
+        },
+        "contact": {
+            "title": "Contactez-moi",
+            "tooltip": {
+                "copy": "Copier le pseudo Discord",
+                "copied": "Copié !"
+            }
+        }
+    },
+    "error": {
+        "404": {
+            "button": "Retourner à l'accueil"
+        }
+    },
+    "theme": {
+        "sr_only": "Changer l'apparence",
+        "appearance": "Apparence",
+        "setting_applies_to_this_browser_only": "La configuration s'applique uniquement à ce navigateur",
+        "light": "Clair",
+        "dark": "Sombre",
+        "system": "Système"
+    },
+    "locale": {
+        "sr_only": "Changer la langue",
+        "applicationLanguage": "Langue de l'application",
+        "setting_applies_to_this_browser_only": "La configuration s'applique uniquement à ce navigateur"
+    }
+}

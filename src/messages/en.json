@@ -1,0 +1,63 @@
+{
+    "header": {
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "home": {
+        "metadata": {
+            "title": "Ki2lian's Portfolio",
+            "description": "Full-stack web developer passionate about turning ideas into reality. Actively contributes to building websites by combining technical skills with creative insight. Naturally curious, hardworking, and driven by a love for learning in the world of web development."
+        },
+        "hero": {
+            "sr_only": "Hi, I'm Killian, I turn ideas into digital reality as a web developer.",
+            "job": "Full-Stack Web Developer",
+            "description": "Hi, I'm a passionate Full-Stack Web Developer dedicated to bringing ideas to life. I'm fast learner and meticulous in attention to details and quality, always striving for improvement."
+        },
+        "projects": {
+            "title": "Projects",
+            "button": {
+                "see_all": "See all",
+                "see_less": "See less",
+                "livePreview": "Live preview",
+                "viewCode": "View code"
+            }
+        },
+        "skills": {
+            "title": "How I can help you ?",
+            "react": "I can design what you want using React.",
+            "tailwind": "The best CSS framework for my new projects.",
+            "typescript": "The essential for the maintainability of my projects.",
+            "backend": {
+                "title": "Backend with Symfony, Fastify and Next.js",
+                "description": "My toolbox to give life to my projects on the server."
+            },
+            "orm": "My allies for data management."
+        },
+        "contact": {
+            "title": "Contact me",
+            "tooltip": {
+                "copy": "Copy Discord pseudo",
+                "copied": "Copied !"
+            }
+        }
+    },
+    "error": {
+        "404": {
+            "button": "Return to home"
+        }
+    },
+    "theme": {
+        "sr_only": "Change appearance",
+        "appearance": "Appearance",
+        "setting_applies_to_this_browser_only": "Setting applies to this browser only",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+    },
+    "locale": {
+        "sr_only": "Change language",
+        "applicationLanguage": "Application language",
+        "setting_applies_to_this_browser_only": "Setting applies to this browser only"
+    }
+}

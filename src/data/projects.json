@@ -1,0 +1,72 @@
+[
+    {
+        "image": "/assets/images/home/projects/dispatchio_web.jpg",
+        "title": {
+            "en": "Dispatch.IO - Dashboard",
+            "fr": "Dispatch.IO - Tableau de bord"
+        },
+        "description": {
+            "en": "The Dispatch.IO dashboard is a web interface designed to manage and monitor the Discord bot’s features in a simple and intuitive way. It allows server administrators to configure settings, view statistics, and control automation tools directly from dashboard. Built with scalability and usability in mind, it offers a seamless management experience for Dispatch.IO users.", 
+            "fr": "Le tableau de bord de Dispatch.IO est une interface web conçue pour gérer et superviser les fonctionnalités du bot Discord de manière simple et intuitive. Il permet aux administrateurs de serveur de configurer les paramètres, consulter les statistiques et contrôler les outils d’automatisation depuis un tableau de bord. Pensé pour être évolutif et ergonomique, il offre une expérience de gestion fluide aux utilisateurs de Dispatch.IO." 
+        },
+        "livePreviewLink": "https://dispatchio.xyz",
+        "sourceCodeLink": "",
+        "technologies": ["Nextjs", "Prisma", "TypeScript", "Tailwind"]
+    },
+    {
+        "image": "/assets/images/home/projects/dispatchio_bot.jpg",
+        "title": {
+            "en": "Dispatch.IO - Discord Bot",
+            "fr": "Dispatch.IO - Bot Discord"
+        },
+        "description": {
+            "en": "Dispatch.IO is a multifunctional Discord bot developed in collaboration with a friend. It offers a variety of features designed to enhance server management, user interaction, and automation. Continuously evolving, the project reflects our teamwork and commitment to building a powerful and scalable Discord tool.",
+            "fr": "Dispatch.IO est un bot Discord multifonction développé en collaboration avec un ami. Il propose diverses fonctionnalités visant à améliorer la gestion des serveurs, l’interaction avec les utilisateurs et l’automatisation. En constante évolution, ce projet met en avant notre travail d’équipe et notre engagement à créer un outil Discord performant et évolutif."
+        },
+        "livePreviewLink": "https://dispatchio.xyz/discord",
+        "sourceCodeLink": "",
+        "technologies": ["NodeJS", "DiscordJS", "TypeScript"]
+    },
+    {
+        "image": "/assets/images/home/projects/yabai.jpg",
+        "title": {
+            "en": "YABAÏ",
+            "fr": "YABAÏ"
+        },
+        "description": {
+            "en": "A website created for an association to present its past projects and upcoming initiatives. It provides clear information about the organization’s goals, activities, and impact, helping visitors better understand and follow the association’s work.",
+            "fr": "Un site web réalisé pour une association afin de présenter ses projets passés et ses initiatives à venir. Il offre une présentation claire des objectifs, des actions et de l’impact de l’organisation, permettant aux visiteurs de mieux comprendre et suivre ses activités."
+        },
+        "livePreviewLink": "https://yabai.fr",
+        "sourceCodeLink": "",
+        "technologies": ["Nextjs", "TypeScript", "Tailwind"]
+    },
+    {
+        "image": "/assets/images/home/projects/pdfacture.jpg",
+        "title": {
+            "en": "PDFacture",
+            "fr": "PDFacture"
+        },
+        "description": {
+            "en": "A custom web application designed to simplify invoice generation. It allows users to automatically fill and generate PDF invoices from predefined templates, tailored to the specific needs of the client and their collaborators. The app also includes a built-in file manager for organizing and managing generated invoices efficiently.",
+            "fr": "Une application web personnalisée conçue pour simplifier la génération de factures. Elle permet de pré-remplir et de générer automatiquement des factures PDF à partir de modèles prédéfinis, adaptés aux besoins spécifiques du client et de ses collaborateurs. L’application intègre également un gestionnaire de fichiers pour organiser et gérer facilement les factures générées."
+        },
+        "livePreviewLink": "",
+        "sourceCodeLink": "",
+        "technologies": ["Nextjs", "Prisma", "TypeScript", "Tailwind"]
+    },
+    {
+        "image": "/assets/images/home/projects/portfolio.jpg",
+        "title": {
+            "en": "My portfolio",
+            "fr": "Mon portfolio"
+        },
+        "description": {
+            "en": "This is my personal portfolio, showcasing my work and skills. It's fully responsive and user-friendly, designed with support for dark, light, and auto mode. Available in both English and French, it highlights my projects and expertise in a sleek and accessible manner.",
+            "fr": "Ceci est mon portfolio personnel, présentant mes travaux et compétences. Il est entièrement responsive et convivial, avec un support pour les modes sombre, clair et automatique. Disponible en anglais et en français, il met en valeur mes projets et mon expertise de manière élégante et accessible."
+        },
+        "livePreviewLink": "https://ki2lian.fr",
+        "sourceCodeLink": "https://github.com/Ki2lian/Portfolio",
+        "technologies": ["Nextjs", "TypeScript", "Tailwind"]
+    }
+]
