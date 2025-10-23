@@ -3,6 +3,9 @@ export const ROUTES = {
 };
 
 export const EXTERNAL_LINKS = {
+    API: {
+        LANYARD: "https://api.lanyard.rest/v1",
+    },
     GITHUB: "https://github.com/Ki2lian/",
     MAIL_ME: "mailto:killian@ki2lian.fr",
     WEBSITE_BASE: "https://ki2lian.fr",

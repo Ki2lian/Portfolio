@@ -12,7 +12,11 @@
         "hero": {
             "sr_only": "Salut, moi c'est Killian, je transforme des idées en réalité numérique en tant que développeur Web.",
             "job": "Développeur Web Full-Stack",
-            "description": "Salut, je suis un développeur Web Full-Stack passionné par la concrétisation d'idées. Je suis toujours prêt à apprendre et je suis méticuleux dans l'attention aux détails et à la qualité, toujours en quête d'amélioration."
+            "description": "Salut, je suis un développeur Web Full-Stack passionné par la concrétisation d'idées. Je suis toujours prêt à apprendre et je suis méticuleux dans l'attention aux détails et à la qualité, toujours en quête d'amélioration.",
+            "status": {
+                "online": "En ligne",
+                "offline": "Hors ligne"
+            }
         },
         "projects": {
             "title": "Projets",

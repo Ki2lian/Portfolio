@@ -1,15 +1,16 @@
 {
     "name": "portfolio",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "private": true,
     "scripts": {
         "dev": "next dev --turbopack",
-        "build": "npm run clean && next build",
+        "build": "npm run clean && next build && npm run zip",
         "start": "next start",
         "lint": "next lint",
         "lint:fix": "next lint --fix",
         "next-sitemap": "next-sitemap --config ./next-sitemap.config.mjs",
-        "clean": "rimraf .next"
+        "clean": "rimraf .next && rimraf next.zip",
+        "zip": "bestzip next.zip .next"
     },
     "scarfSettings": {
         "enabled": false
@@ -34,6 +35,7 @@
         "react-dom": "^19.0.0",
         "react-icons": "^5.5.0",
         "tailwind-merge": "^3.3.0",
+        "use-lanyard": "^1.7.0",
         "zod": "^4.1.9"
     },
     "devDependencies": {
@@ -43,6 +45,7 @@
         "@types/node": "^20.19.17",
         "@types/react": "^19",
         "@types/react-dom": "^19",
+        "bestzip": "^2.2.1",
         "eslint": "^9",
         "eslint-config-next": "15.3.3",
         "eslint-plugin-github": "^6.0.0",

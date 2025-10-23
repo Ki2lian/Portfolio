@@ -1,5 +1,19 @@
 [
     {
+        "image": "/assets/images/home/projects/yabai.jpg",
+        "title": {
+            "en": "YABAÏ",
+            "fr": "YABAÏ"
+        },
+        "description": {
+            "en": "A website created for an association to present its past projects and upcoming initiatives. It provides clear information about the organization’s goals, activities, and impact, helping visitors better understand and follow the association’s work.",
+            "fr": "Un site web réalisé pour une association afin de présenter ses projets passés et ses initiatives à venir. Il offre une présentation claire des objectifs, des actions et de l’impact de l’organisation, permettant aux visiteurs de mieux comprendre et suivre ses activités."
+        },
+        "livePreviewLink": "https://yabai.fr",
+        "sourceCodeLink": "",
+        "technologies": ["Nextjs", "TypeScript", "Tailwind"]
+    },
+    {
         "image": "/assets/images/home/projects/dispatchio_web.jpg",
         "title": {
             "en": "Dispatch.IO - Dashboard",
@@ -26,20 +40,6 @@
         "livePreviewLink": "https://dispatchio.xyz/discord",
         "sourceCodeLink": "",
         "technologies": ["NodeJS", "DiscordJS", "TypeScript"]
-    },
-    {
-        "image": "/assets/images/home/projects/yabai.jpg",
-        "title": {
-            "en": "YABAÏ",
-            "fr": "YABAÏ"
-        },
-        "description": {
-            "en": "A website created for an association to present its past projects and upcoming initiatives. It provides clear information about the organization’s goals, activities, and impact, helping visitors better understand and follow the association’s work.",
-            "fr": "Un site web réalisé pour une association afin de présenter ses projets passés et ses initiatives à venir. Il offre une présentation claire des objectifs, des actions et de l’impact de l’organisation, permettant aux visiteurs de mieux comprendre et suivre ses activités."
-        },
-        "livePreviewLink": "https://yabai.fr",
-        "sourceCodeLink": "",
-        "technologies": ["Nextjs", "TypeScript", "Tailwind"]
     },
     {
         "image": "/assets/images/home/projects/pdfacture.jpg",
