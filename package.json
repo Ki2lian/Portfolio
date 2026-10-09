@@ -4,13 +4,10 @@
     "private": true,
     "scripts": {
         "dev": "next dev --turbopack",
-        "build": "npm run clean && next build && npm run zip",
+        "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "lint:fix": "next lint --fix",
-        "next-sitemap": "next-sitemap --config ./next-sitemap.config.mjs",
-        "clean": "rimraf .next && rimraf next.zip",
-        "zip": "bestzip next.zip .next"
+        "lint:fix": "next lint --fix"
     },
     "scarfSettings": {
         "enabled": false
@@ -28,8 +25,8 @@
         "embla-carousel-auto-scroll": "^8.6.0",
         "embla-carousel-react": "^8.6.0",
         "framer-motion": "^12.23.24",
-        "next": "^15.5.9",
-        "next-intl": "^4.3.12",
+        "next": "^15.5.27",
+        "next-intl": "^4.14.9",
         "next-themes": "^0.4.6",
         "react": "^19.0.2",
         "react-dom": "^19.0.2",
@@ -45,7 +42,6 @@
         "@types/node": "^20.19.17",
         "@types/react": "^19",
         "@types/react-dom": "^19",
-        "bestzip": "^2.2.1",
         "eslint": "^9",
         "eslint-config-next": "15.3.3",
         "eslint-plugin-github": "^6.0.0",
@@ -54,8 +50,6 @@
         "eslint-plugin-prefer-arrow-functions": "^3.9.1",
         "eslint-plugin-prettier": "^5.4.1",
         "eslint-plugin-unused-imports": "^4.1.4",
-        "next-sitemap": "^4.2.3",
-        "rimraf": "^6.0.1",
         "tailwindcss": "^4",
         "tw-animate-css": "^1.3.3",
         "typescript": "^5"

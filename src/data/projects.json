@@ -1,17 +1,17 @@
 [
     {
-        "image": "/assets/images/home/projects/yabai.jpg",
+        "image": "/assets/images/home/projects/guess_the_meme.png",
         "title": {
-            "en": "YABAÏ",
-            "fr": "YABAÏ"
+            "en": "Guess the meme",
+            "fr": "Devine le mème"
         },
         "description": {
-            "en": "A website created for an association to present its past projects and upcoming initiatives. It provides clear information about the organization’s goals, activities, and impact, helping visitors better understand and follow the association’s work.",
-            "fr": "Un site web réalisé pour une association afin de présenter ses projets passés et ses initiatives à venir. Il offre une présentation claire des objectifs, des actions et de l’impact de l’organisation, permettant aux visiteurs de mieux comprendre et suivre ses activités."
+            "en": "A French meme guessing game: identify blurred, pixelated, or distorted memes before they are fully revealed. Play a new daily challenge or classic seeded games, track your progress, and compete to find the answer in as few guesses as possible.",
+            "fr": "Un jeu français de devinettes autour des mèmes : identifiez une image floutée, pixelisée ou déformée avant sa révélation complète. Relevez le défi quotidien ou des parties classiques, suivez vos progrès et trouvez la réponse en un minimum de propositions."
         },
-        "livePreviewLink": "https://yabai.fr",
-        "sourceCodeLink": "",
-        "technologies": ["Nextjs", "TypeScript", "Tailwind"]
+        "livePreviewLink": "https://devinelememe.ki2lian.fr",
+        "sourceCodeLink": "https://github.com/Ki2lian/GuessMemeFR",
+        "technologies": ["Nextjs", "Prisma", "TypeScript", "Tailwind"]
     },
     {
         "image": "/assets/images/home/projects/dispatchio_web.jpg",
@@ -20,8 +20,8 @@
             "fr": "Dispatch.IO - Tableau de bord"
         },
         "description": {
-            "en": "The Dispatch.IO dashboard is a web interface designed to manage and monitor the Discord bot’s features in a simple and intuitive way. It allows server administrators to configure settings, view statistics, and control automation tools directly from dashboard. Built with scalability and usability in mind, it offers a seamless management experience for Dispatch.IO users.", 
-            "fr": "Le tableau de bord de Dispatch.IO est une interface web conçue pour gérer et superviser les fonctionnalités du bot Discord de manière simple et intuitive. Il permet aux administrateurs de serveur de configurer les paramètres, consulter les statistiques et contrôler les outils d’automatisation depuis un tableau de bord. Pensé pour être évolutif et ergonomique, il offre une expérience de gestion fluide aux utilisateurs de Dispatch.IO." 
+            "en": "The Dispatch.IO dashboard is a web interface designed to manage and monitor the Discord bot’s features in a simple and intuitive way. It allows server administrators to configure settings, view statistics, and control automation tools directly from dashboard. Built with scalability and usability in mind, it offers a seamless management experience for Dispatch.IO users.",
+            "fr": "Le tableau de bord de Dispatch.IO est une interface web conçue pour gérer et superviser les fonctionnalités du bot Discord de manière simple et intuitive. Il permet aux administrateurs de serveur de configurer les paramètres, consulter les statistiques et contrôler les outils d’automatisation depuis un tableau de bord. Pensé pour être évolutif et ergonomique, il offre une expérience de gestion fluide aux utilisateurs de Dispatch.IO."
         },
         "livePreviewLink": "https://dispatchio.xyz",
         "sourceCodeLink": "",
@@ -54,6 +54,20 @@
         "livePreviewLink": "",
         "sourceCodeLink": "",
         "technologies": ["Nextjs", "Prisma", "TypeScript", "Tailwind"]
+    },
+    {
+        "image": "/assets/images/home/projects/yabai.jpg",
+        "title": {
+            "en": "YABAÏ",
+            "fr": "YABAÏ"
+        },
+        "description": {
+            "en": "A website created for an association to present its past projects and upcoming initiatives. It provides clear information about the organization’s goals, activities, and impact, helping visitors better understand and follow the association’s work.",
+            "fr": "Un site web réalisé pour une association afin de présenter ses projets passés et ses initiatives à venir. Il offre une présentation claire des objectifs, des actions et de l’impact de l’organisation, permettant aux visiteurs de mieux comprendre et suivre ses activités."
+        },
+        "livePreviewLink": "https://yabai.fr",
+        "sourceCodeLink": "",
+        "technologies": ["Nextjs", "TypeScript", "Tailwind"]
     },
     {
         "image": "/assets/images/home/projects/portfolio.jpg",
