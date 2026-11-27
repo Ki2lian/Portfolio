@@ -8,6 +8,10 @@ name: Deploy
 on:
     push:
         branches: [main]
+        # Changes to the pipeline itself or to documentation do not change the image: no point rebuilding it.
+        paths-ignore:
+            - ".github/**"
+            - "**/*.md"
     workflow_dispatch:
 
 # Never two deploys at once, and never cancel one that is running (it could stop halfway).
