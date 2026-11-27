@@ -1,0 +1,25 @@
+# Weekly `pnpm audit`: the safety net for what Dependabot cannot fix by itself. Dependabot cannot read pnpm 12's
+# two-document lockfile yet, so it raises no security alert for it. A high or critical finding fails this run and
+# GitHub emails the failure. Moderate and low findings stay in the log without failing it.
+name: Audit
+
+on:
+    schedule:
+        - cron: "17 6 * * 1"   # Monday 06:17 UTC, off the busy :00 mark
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+jobs:
+    audit:
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        steps:
+            - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+            # Reads the pnpm version from "packageManager" in package.json.
+            - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+            - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+              with:
+                  node-version-file: package.json
+            - run: pnpm audit --audit-level=high
