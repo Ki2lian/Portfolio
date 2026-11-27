@@ -1,0 +1,34 @@
+# Dependabot: proposes dependency updates as pull requests. Minor and patch updates arrive once a week, grouped in
+# ONE pull request, and are merged by workflows/dependabot-auto-merge.yml when the checks pass. Major versions are
+# left out on purpose (they can break the code or leave a runtime's support window): they are done by hand, when chosen.
+#
+# CHANGE per project: `target-branch` (add it under each entry if the project does not use the default branch) and
+# the ecosystems that exist (drop `docker` if there is no Dockerfile).
+version: 2
+updates:
+    - package-ecosystem: npm
+      directory: /
+      schedule: { interval: weekly }
+      open-pull-requests-limit: 5
+      groups:
+          minor-and-patch:
+              update-types: [ minor, patch ]
+      ignore:
+          - dependency-name: "*"
+            update-types: [ version-update:semver-major ]
+    # The actions are pinned by commit SHA (a tag can be moved); Dependabot keeps the SHA and its "# vX" comment current.
+    - package-ecosystem: github-actions
+      directory: /
+      schedule: { interval: monthly }
+      groups:
+          actions:
+              patterns: [ "*" ]
+    - package-ecosystem: docker
+      directory: /
+      schedule: { interval: weekly }
+      # Wait a few days after a release before proposing it, so a broken or yanked image is caught first.
+      cooldown:
+          default-days: 3
+      ignore:
+          - dependency-name: "*"
+            update-types: [ version-update:semver-major ]

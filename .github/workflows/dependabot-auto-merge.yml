@@ -1,0 +1,54 @@
+# Runs on every Dependabot pull request: the project's checks (ci.yml), then, if they pass and it is not a major
+# version, merge it and start the deploy. A bad update is stopped by the checks, or at the latest by the server's
+# health check, which puts the previous version back (see app-deploy in vps-infra).
+#
+# Why the merge and the deploy are done here and not left to GitHub:
+#   - "auto-merge" only waits for required checks, which a free private repository cannot require
+#   - a merge made with GITHUB_TOKEN does not start other workflows, so the deploy is started by hand
+#
+# SECURITY: only for pull requests opened by Dependabot (checked twice). Never switch this to `pull_request_target`:
+# it would give the repository's secrets to code from a pull request.
+#
+# CHANGE per project: `branches` (the branch Dependabot targets) and the deploy workflow file (delete the last step
+# if the project is not deployed on merge).
+name: Dependabot
+
+on:
+    pull_request:
+        branches: [main]
+
+permissions:
+    contents: read
+
+jobs:
+    checks:
+        if: github.event.pull_request.user.login == 'dependabot[bot]' && github.actor == 'dependabot[bot]'
+        uses: ./.github/workflows/ci.yml
+        with:
+            dependabot: true
+
+    merge:
+        needs: checks
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        permissions:
+            actions: write
+            contents: write
+            pull-requests: write
+        steps:
+            - id: metadata
+              uses: dependabot/fetch-metadata@21025c705c08248db411dc16f3619e6b5f9ea21a # v2
+              with:
+                  github-token: ${{ secrets.GITHUB_TOKEN }}
+            - name: Merge (not a major version)
+              if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  PR: ${{ github.event.pull_request.html_url }}
+              run: gh pr merge --squash "$PR"
+            - name: Start the deploy
+              if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  REPO: ${{ github.repository }}
+              run: gh workflow run deploy.yml --repo "$REPO" --ref main
