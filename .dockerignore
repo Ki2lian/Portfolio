@@ -1,0 +1,11 @@
+# Keep the build context small and never send secrets or local state to the image.
+node_modules
+.next
+.git
+.github
+.vscode
+.env*
+*.md
+Dockerfile
+.dockerignore
+npm-debug.log*
