@@ -1,0 +1,7 @@
+# Install scripts of dependencies are blocked by default. Each decision is explicit.
+# All four only provide optional native fast paths or watchers; the build works without them.
+allowBuilds:
+    "@parcel/watcher": false
+    "@swc/core": false
+    "@tailwindcss/oxide": false
+    unrs-resolver: false

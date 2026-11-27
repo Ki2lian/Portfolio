@@ -2,6 +2,9 @@
     "name": "portfolio",
     "version": "2.0.1",
     "private": true,
+    "engines": {
+        "node": "^26"
+    },
     "scripts": {
         "dev": "next dev --turbopack",
         "build": "next build",
@@ -53,5 +56,6 @@
         "tailwindcss": "^4",
         "tw-animate-css": "^1.3.3",
         "typescript": "^5"
-    }
+    },
+    "packageManager": "pnpm@12.23.0"
 }
