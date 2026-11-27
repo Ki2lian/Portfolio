@@ -255,6 +255,12 @@ importers:
       '@eslint/eslintrc':
         specifier: ^3
         version: 3.3.1(supports-color@7.2.0)
+      '@eslint/js':
+        specifier: ^9.28.0
+        version: 9.28.0
+      '@next/eslint-plugin-next':
+        specifier: ^15.3.3
+        version: 15.3.3
       '@stylistic/eslint-plugin':
         specifier: ^4.4.0
         version: 4.4.0(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.8.3)
@@ -270,6 +276,9 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.1.5(@types/react@19.1.6)
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^8.71.1
+        version: 8.71.1(@typescript-eslint/parser@8.71.1(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.8.3)
       eslint:
         specifier: ^9
         version: 9.28.0(jiti@2.4.2)(supports-color@7.2.0)
@@ -291,6 +300,9 @@ importers:
       eslint-plugin-prettier:
         specifier: ^5.4.1
         version: 5.4.1(eslint-config-prettier@10.1.5(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0)))(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0))(prettier@3.5.3)
+      eslint-plugin-react:
+        specifier: ^7.37.5
+        version: 7.37.5(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0))
       eslint-plugin-unused-imports:
         specifier: ^4.1.4
         version: 4.1.4(@typescript-eslint/eslint-plugin@8.71.1(@typescript-eslint/parser@8.71.1(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0))
@@ -303,6 +315,9 @@ importers:
       typescript:
         specifier: ^5
         version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.71.1
+        version: 8.71.1(eslint@9.28.0(jiti@2.4.2)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.8.3)
 
 packages:
 

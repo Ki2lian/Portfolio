@@ -40,11 +40,14 @@
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3",
+        "@eslint/js": "^9.28.0",
+        "@next/eslint-plugin-next": "^15.3.3",
         "@stylistic/eslint-plugin": "^4.4.0",
         "@tailwindcss/postcss": "^4",
         "@types/node": "^20.19.17",
         "@types/react": "^19",
         "@types/react-dom": "^19",
+        "@typescript-eslint/eslint-plugin": "^8.71.1",
         "eslint": "^9",
         "eslint-config-next": "15.3.3",
         "eslint-plugin-github": "^6.0.0",
@@ -52,10 +55,12 @@
         "eslint-plugin-perfectionist": "^4.15.0",
         "eslint-plugin-prefer-arrow-functions": "^3.9.1",
         "eslint-plugin-prettier": "^5.4.1",
+        "eslint-plugin-react": "^7.37.5",
         "eslint-plugin-unused-imports": "^4.1.4",
         "tailwindcss": "^4",
         "tw-animate-css": "^1.3.3",
-        "typescript": "^5"
+        "typescript": "^5",
+        "typescript-eslint": "^8.71.1"
     },
     "packageManager": "pnpm@12.23.0"
 }
