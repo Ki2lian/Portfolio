@@ -5,3 +5,6 @@ allowBuilds:
     "@swc/core": false
     "@tailwindcss/oxide": false
     unrs-resolver: false
+# Next.js bundles postcss 8.4.31, which has known file-read and XSS issues (fixed upstream in 8.5.x).
+overrides:
+    postcss: ">=8.5.23"
